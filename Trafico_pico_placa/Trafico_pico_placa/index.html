@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico y placa.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <h1>Consulta de Pico y Placa</h1>
+
+        <label for="municipio">Ingrese el municipio del vehiculo</label>
+        <select id="municipio" name="municipio" required>
+            <option value="">Seleccione un municipio</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+        </select>
+
+        <label for="dia">Seleccione el dia de la semana</label>
+        <select id="dia" name="dia" required>
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+        </select>
+
+        <label for="placa">Ingrese el ultimo número de placa:</label>
+        <input type="text" id="placa" name="placa" required>
+
+        <label for="tipo_vehiculo">Seleccione el tipo de vehiculo</label>
+        <select name="vehiculo" id="vehiculo">
+            <option value="particular">Particular</option>
+            <option value="transporte_publico">Transporte Público</option>
+            <option value="carga">Carga</option>
+            <option value="motocicleta">Motocicleta</option>
+        </select>
+
+        <button type="submit" id="verificar">Consultar</button>
+    </form>
+    <div id="resultado"></div>
+      <script src="app.js"></script> 
+</body>
+</html>
